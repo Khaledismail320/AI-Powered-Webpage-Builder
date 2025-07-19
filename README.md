@@ -63,7 +63,7 @@ cd AI-Powered-Webpage-Builder
    OPENROUTER_API_KEY=your_api_key_here
 
    #Frontend url
-   FRONTEND_URL = locahlhost:300
+   FRONTEND_URL = locahlhost:3000
    
    ```
 
