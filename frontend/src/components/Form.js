@@ -23,7 +23,7 @@ const Form = ({ onSubmit }) => {
                 title: "Success",
                 description: result.message,
                 status: "success",
-                duration: 3000,
+                duration: 5000,
                 isClosable: true,
             });
             
