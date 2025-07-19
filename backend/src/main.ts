@@ -4,7 +4,7 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
-    origin: 'http://localhost:3000', // Next.js dev server
+    origin: process.env.FRONTEND_URL, // Next.js dev server
     credentials: true,              // If using cookies
   });
   await app.listen(process.env.PORT ?? 3001);
