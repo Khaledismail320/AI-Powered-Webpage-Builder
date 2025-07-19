@@ -10,7 +10,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
       useFactory: async (configService: ConfigService) => {
         const uri = configService.get<string>('MONGO_URI');
         console.log('Connecting to MongoDB...');
-        console.log(`MongoDB URI: ${uri}`);
+        // console.log(`MongoDB URI: ${uri}`);
         return {
           uri,
         };

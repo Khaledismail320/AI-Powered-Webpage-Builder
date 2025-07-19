@@ -7,7 +7,7 @@ import { Response } from 'express';
 export class AibuilderController {
     constructor(private readonly aibuilderService: AibuilderService){}
 
-    @Post('generate_pages')
+    @Post('generate')
     async generatePages(@Body() dto: GeneratePagesDto, @Res() res: Response) {
 
 
