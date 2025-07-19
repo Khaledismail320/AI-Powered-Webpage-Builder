@@ -1,6 +1,6 @@
 # AI-Powered Webpage Builder
 
-A full-stack application that generates HTML webpages using AI, built with Next.js frontend and NestJS backend.
+A full-stack application that generates webpages using AI, built with Next.js frontend and NestJS backend.
 
 ## Features
 
@@ -14,21 +14,18 @@ A full-stack application that generates HTML webpages using AI, built with Next.
 
 ### Frontend
 - **Next.js** - React framework
-- **Chakra UI** - Component library
-- **Axios** - HTTP client
-- **React Icons** - Icon library
+
 
 ### Backend
 - **NestJS** - Node.js framework
 - **MongoDB** - Database
-- **Mongoose** - MongoDB ODM
-- **AI Integration** - For webpage generation
+- **AI Integration** - OpenRouter's API for Qwen coder model
 
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
-- **Node.js** (v16 or higher)
-- **npm** or **yarn**
+- **Node.js** 
+- **npm** 
 - **MongoDB** (local installation or MongoDB Atlas)
 - **Git**
 
@@ -63,7 +60,7 @@ cd AI-Powered-Webpage-Builder
    PORT=3001
 
    # AI Configuration 
-   # OPENROUTER_API_KEY=your_api_key_here
+   OPENROUTER_API_KEY=your_api_key_here
    
    ```
 
@@ -86,7 +83,7 @@ cd AI-Powered-Webpage-Builder
 
 1. **Navigate to the frontend directory:**
    ```bash
-   cd ../frontend
+   cd frontend
    ```
 
 2. **Install dependencies:**
@@ -137,7 +134,7 @@ AI-Powered-Webpage-Builder/
 │   │   │   ├── Drawer.js       # History drawer
 │   │   │   ├── Form.js         # Generation form
 │   │   │   ├── Navbar.js       # Navigation bar
-│   │   │   └── Preview.js      # HTML preview
+│   │   │   └── Preview.js      # Webpage preview section
 │   │   └── pages/              # Next.js pages
 │   ├── package.json
 │   
@@ -173,20 +170,6 @@ npm run start        # Start production server
 npm run lint         # Run ESLint
 ```
 
-## Database Schema
-
-The application uses MongoDB with the following main schema:
-
-```javascript
-// GeneratedPages Schema
-{
-  _id: ObjectId,
-  prompt: String,           // User's input prompt
-  generatedsections: String, // Generated HTML code
-  createdAt: Date,          // Creation timestamp
-  __v: Number              // Version key
-}
-```
 
 ## Troubleshooting
 
@@ -208,32 +191,6 @@ The application uses MongoDB with the following main schema:
    - Ensure database permissions (if using Atlas)
 
 4. **AI generation not working:**
-   - Check AI service API keys
-   - Verify AI service configuration
-   - Check API rate limits
+   - Check your Open Router API key
+   
 
-### Port Conflicts
-If you need to use different ports:
-
-1. **Backend:** Change `PORT` in backend `.env`
-2. **Frontend:** Update `NEXT_PUBLIC_API_URL` in frontend `.env.local`
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
-
-## Support
-
-If you encounter any issues or have questions, please open an issue on GitHub.
-
----
-
-**Happy Building! 🚀**
