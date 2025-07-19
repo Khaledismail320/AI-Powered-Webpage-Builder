@@ -73,7 +73,7 @@ return (
                                 <Spinner />
                             </Box>
                         ) : history.length === 0 ? (
-                            <Text color="gray.500">No prompts yet.</Text>
+                            <Text color="gray.500">No data yet.</Text>
                         ) : (
                             history.map((item, idx) => (
                                 <Box
