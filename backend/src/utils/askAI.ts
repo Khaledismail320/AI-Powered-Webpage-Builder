@@ -1,4 +1,3 @@
-// src/aibuilder/utils/askAI.ts
 import axios from 'axios';
 
 export async function askAI(prompt: string) {
