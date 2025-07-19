@@ -26,7 +26,7 @@ A full-stack application that generates webpages using AI, built with Next.js fr
 Before you begin, ensure you have the following installed:
 - **Node.js** 
 - **npm** 
-- **MongoDB** (local installation or MongoDB Atlas)
+- **MongoDB** (MongoDB Atlas)
 - **Git**
 
 ## Setup Instructions
@@ -128,7 +128,7 @@ AI-Powered-Webpage-Builder/
 │   │   ├── aibuilder/          # AI builder module
 │   │   ├── database/           # Database configuration
 │   │   ├── schemas/            # MongoDB schemas
-│   │   └── utils/              # Utility functions
+│   │   └── utils/              # Utility functions shared around the project
 │   ├── package.json
 │   
 ├── frontend/
